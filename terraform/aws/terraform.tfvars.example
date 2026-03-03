@@ -1,0 +1,12 @@
+# Copy this to terraform.tfvars and fill in your values.
+# NEVER commit terraform.tfvars to Git — it's in .gitignore
+
+aws_region         = "us-east-1"
+environment        = "dev"
+account_id         = "123456789012"    # your AWS account ID
+app_s3_bucket_name = "my-app-bucket"  # your S3 bucket name
+
+# Phase 2 - EKS + IRSA
+eks_cluster_name         = "dev-eks-cluster"  # can be anything you want
+k8s_namespace            = "app"
+k8s_service_account_name = "app-sa"
